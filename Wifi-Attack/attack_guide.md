@@ -38,11 +38,55 @@ sudo airmon-ng start wlan1
 
 ```sudo airodump-ng wlan1mon```
 
-*Скопіювати вивід сюди*
+``` CH  3 ][ Elapsed: 36 s ][ 2024-10-27 12:20 ][ paused output                                   
+                                                                                               
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID               
+                                                                                               
+ 64:64:4A:DD:21:68  -82        1        2    0  11  130   WPA2 CCMP   PSK  Xiaomi_2167         
+ 8C:53:C3:39:7D:8C  -79        4        0    0   2  130   WPA2 CCMP   PSK  Rusanovka-net 156   
+ B0:4E:26:C4:BF:A1  -79        2        0    0   2  130   WPA2 CCMP   PSK  YakovenkoFamily     
+ 98:DE:D0:90:20:5C  -81        2        0    0   3  270   WPA2 CCMP   PSK  Shamo 4             
+ 7C:8B:CA:4F:8C:04   -1        0        2    0   3   -1   WPA              <length:  0>        
+ C8:13:8B:74:AF:F1  -79        2        0    0   7  130   WPA2 CCMP   PSK  LANTUS              
+ 10:FE:ED:87:12:C8  -81        2        0    0   1  270   WPA2 CCMP   PSK  Lgita2018           
+ E4:C3:2A:37:5B:C1  -80       22        0    0   3  270   WPA2 CCMP   PSK  TP-Link_5BC1        
+ F4:F2:6D:3E:84:B4  -82        9        0    0  10  405   WPA2 CCMP   PSK  S J Bond            
+ 1C:3B:F3:79:EF:9F  -80       10        0    0   3  270   WPA2 CCMP   PSK  Rusanovka_ef9f      
+ 0C:B6:D2:21:54:05  -82       22        0    0  13  270   WPA2 CCMP   PSK  LL_Home             
+ C0:C9:E3:6A:5D:D0  -78       11        0    0   7  405   WPA2 CCMP   PSK  Rusanovka_5dd0      
+ F2:77:59:23:AF:91  -74       20        0    0   6  360   WPA2 CCMP   PSK  SL-Lokkie           
+ 82:15:A2:45:5A:59  -75       34        3    0  11  130   WPA2 CCMP   PSK  <length: 30>        
+ 00:EB:D8:FD:79:3A  -79        3        0    0   4  270   WPA2 CCMP   PSK  MERCUSYS_793A       
+ 00:31:92:79:94:B5  -76       26        0    0   4  195   WPA2 CCMP   PSK  TP-Link_94B5        
+ B0:A7:B9:01:F9:F3  -74       18        7    0   3  130   WPA2 CCMP   PSK  Kalistov House      
+ 82:B0:24:DA:55:C9  -76       35        1    0   3  130   WPA2 CCMP   PSK  <length: 30>        
+ 50:0F:F5:84:DE:88  -79       20        0    0   2  130   WPA2 CCMP   PSK  Tenda_GUNG          
+ 82:15:A2:45:5A:58  -74       40        1    0  11  130   WPA2 CCMP   PSK  NAS186              
+ 26:CF:24:F4:B2:03  -81        9        0    0  11  270   OPN              <length:  0>        
+ E8:8D:28:61:41:5B  -77       28        0    0  11  195   WPA2 CCMP   PSK  MadMax2             
+ 00:31:92:85:8C:27  -82        8        0    0  11  270   WPA2 CCMP   PSK  Home-121            
+ 7A:8C:B5:2B:9D:B9  -57       52        0    0   5  360   WPA2 CCMP   PSK  <length:  0>        
+ E4:BE:ED:68:DA:B4  -74      118        0    0   5  135   WPA2 CCMP   PSK  Varya               
+ FA:5E:3C:18:70:2A  -79       18        1    0  10  130   WPA2 CCMP   PSK  E71R193v            
+ CA:25:4A:33:91:5A  -69       62        0    0  10  130   WPA2 CCMP   PSK  <length:  0>        
+ FE:5E:3C:18:70:2A  -79       18        0    0  10  130   WPA2 CCMP   PSK  E71R193g            
+ 78:8C:B5:0B:9D:B9  -56       55        1    0   5  360   WPA2 CCMP   PSK  TP-Link_9DB9        
+ 06:31:92:79:94:B5  -77       24        0    0   4  195   WPA2 CCMP   PSK  <length:  0>        
+ C8:3A:35:0E:B6:B8  -79       45        0    0   9  135   WPA2 CCMP   PSK  108                 
+ B0:BE:76:18:CE:FA  -80        3        0    0   3  405   WPA2 CCMP   PSK  TP-Link_CEFA        
+ B4:B0:24:DA:55:C7  -74       32        2    0   3  130   WPA2 CCMP   PSK  Rusanovka4852       
+ 60:32:B1:FF:8B:27  -72       82       19    0   2  405   WPA2 CCMP   PSK  (Приховано мною)               
+ 60:83:E7:CB:9A:1D  -22       75        1    0  11   65   WPA2 CCMP   PSK  dkucheruk           
+ 66:32:B1:FF:8B:27  -27       92        0    0   2  405   WPA2 CCMP   PSK  <length:  0>       
+ D4:5D:64:DF:B1:70  -79       21        0    0  13  130   WPA2 CCMP   PSK  Danya              
+ B4:0F:3B:16:2C:84  -76       29        0    0  13  130   WPA2 CCMP   PSK  Olena
+```
 
 2. Скопіювати BSSID необхідної мережі:
 
-```60:83:E7:CB:9A:1D```
+*60:83:E7:CB:9A:1D  -22       75        1    0  11   65   WPA2 CCMP   PSK  dkucheruk*
+
+-> ```60:83:E7:CB:9A:1D```
 
 3. Створити dump.cap з хендшейком
 
@@ -179,6 +223,3 @@ Hardware.Mon.#1..: Util: 25%
 Started: Sun Oct 27 12:54:28 2024
 Stopped: Sun Oct 27 12:56:25 2024
 ```
-
-
-
