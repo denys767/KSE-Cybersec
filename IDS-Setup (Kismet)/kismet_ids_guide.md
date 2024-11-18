@@ -8,7 +8,7 @@
 
 ```bash
 # 1. Встановіть Kismet
-sudo apt update
+# sudo apt update - на live-калі це супер повільно
 sudo apt install kismet -y
 
 # 2. Додайте користувача до групи для роботи з WiFi-адаптером (замість $USER вкажіть ваше ім’я користувача)
