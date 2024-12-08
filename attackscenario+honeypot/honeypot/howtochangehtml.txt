@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Input Page</title>
+    <script>
+        async function sendPassword() {
+            const password = document.getElementById('password').value;
+            try {
+                const response = await fetch('/password', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    alert('Password sent successfully');
+                } else {
+                    alert('Failed to send password');
+                }
+            } catch (error) {
+                console.error('Error sending password:', error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter Your Password</h1>
+    <input type="password" id="password" />
+    <button onclick="sendPassword()">Submit</button>
+</body>
+</html>
